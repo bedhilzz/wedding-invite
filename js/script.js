@@ -8,29 +8,29 @@
       return false;
     });
 
-    function send_form (type) {
+    function send_form(type) {
 
       var name = $("input#name_" + type).val();
       if (name == "") {
-        $("input#name_" + type).css({border: "1px solid red"});
+        $("input#name_" + type).css({ border: "1px solid red" });
         $("input#name_" + type).focus();
         return false;
       }
       var email = $("input#email_" + type).val();
       if (email == "") {
-        $("input#email_" + type).css({border: "1px solid red"});
+        $("input#email_" + type).css({ border: "1px solid red" });
         $("input#email_" + type).focus();
         return false;
       }
       var guest = $("input#guest_" + type).val();
       if (guest == "") {
-        $("input#guest_" + type).css({border: "1px solid red"});
+        $("input#guest_" + type).css({ border: "1px solid red" });
         $("input#guest_" + type).focus();
         return false;
       }
       var attending = $("input#attending_" + type).val();
       if (attending == "") {
-        $("input#attending_" + type).css({border: "1px solid red"});
+        $("input#attending_" + type).css({ border: "1px solid red" });
         $("input#attending_" + type).focus();
         return false;
       }
@@ -43,14 +43,14 @@
       var dataString = '&entry.1068564038=' + name + '&entry.352472512=' + email + '&entry.1150838879=' + guest + '&entry.66493311=' + attending;
       var form = $(this);
       var str = form.serialize();
-      function sent(){
+      function sent() {
         $('#div_' + type).html("<div id='form_send_message'>Thank you :)</div>", 1500);
       }
       $.ajax({
         type: "POST",
         url: "https://docs.google.com/forms/d/1OCiSMSdit8QgxlhWjO9y9MmtFgpLdo52xf7UaCfY_ng/formResponse",
         data: dataString,
-        complete:sent
+        complete: sent
       });
     }
 
@@ -86,15 +86,15 @@
 
     /*ColorBox*/
     if ($(window).width() >= 760) {
-      $(".youtube").colorbox({iframe: true, innerWidth: 640, innerHeight: 390});
+      $(".youtube").colorbox({ iframe: true, innerWidth: 640, innerHeight: 390 });
     } else {
-      $(".youtube").colorbox({iframe: true, innerWidth: 320, innerHeight: 240});
+      $(".youtube").colorbox({ iframe: true, innerWidth: 320, innerHeight: 240 });
     }
     $(window).resize(function () {
       if ($(window).width() >= 760) {
-        $(".youtube").colorbox({iframe: true, innerWidth: 640, innerHeight: 390});
+        $(".youtube").colorbox({ iframe: true, innerWidth: 640, innerHeight: 390 });
       } else {
-        $(".youtube").colorbox({iframe: true, innerWidth: 320, innerHeight: 240});
+        $(".youtube").colorbox({ iframe: true, innerWidth: 320, innerHeight: 240 });
       }
     });
 
@@ -121,7 +121,7 @@
     });
 
     /*CountDown*/
-    $('.married_coundown').countdown({until: new Date("Feb 18, 2017 11:00:00")});
+    $('.married_coundown').countdown({ until: new Date("Jan 11, 2022 09:00:00") });
 
     /*OWL Carousel in Our Story*/
     $(".story_wrapper").owlCarousel({
