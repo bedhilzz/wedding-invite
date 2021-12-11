@@ -643,12 +643,12 @@ header {
   transform-origin: 100% 100% 0
 }
 
-.married_coundown {
+.marriage_countdown {
   font: 400 40px/48px Roboto Condensed;
   margin: 20px 0 0 0
 }
 
-.married_coundown .countdown-section {
+.marriage_countdown .countdown-section {
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -657,12 +657,12 @@ header {
   position: relative;
 }
 
-.married_coundown .countdown-amount {
+.marriage_countdown .countdown-amount {
   min-width: 60px;
   text-align: center;
 }
 
-.married_coundown .countdown-section:before {
+.marriage_countdown .countdown-section:before {
   content: " : ";
   display: inline-block;
   vertical-align: top;
@@ -672,11 +672,11 @@ header {
 
 }
 
-.married_coundown .countdown-section:first-child:before {
+.marriage_countdown .countdown-section:first-child:before {
   display: none
 }
 
-.married_coundown .countdown-period {
+.marriage_countdown .countdown-period {
   font: 20px/24px Great Vibes;
   color: #C5C3BE;
   display: block;
